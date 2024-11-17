@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: TaskManager
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    defer-datasource-initialization: true
+
+server:
+  port: 8000
+mail:
+  hostname: 127.0.0.1
+  port: 6555
+  from: 1234
